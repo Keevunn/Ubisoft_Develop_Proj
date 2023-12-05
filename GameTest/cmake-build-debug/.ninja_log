@@ -1,0 +1,10 @@
+# ninja log v5
+2	7849	7233205709740808	CMakeFiles/GameTest.dir/App/DirectSound.cpp.obj	cd651409c2262b45
+6	3497	7233206892366225	CMakeFiles/GameTest.dir/App/app.cpp.obj	d85a7cb31fa08fb0
+12	3564	7233206893008316	CMakeFiles/GameTest.dir/App/main.cpp.obj	e1caa8006ce304d2
+36	1570	7233207107823159	CMakeFiles/GameTest.dir/stb_image/stb_image.cpp.obj	abba1cf7aa860c72
+17	2809	7233207119197702	CMakeFiles/GameTest.dir/App/SimpleController.cpp.obj	7541460b42191043
+9	4012	7233207132253626	CMakeFiles/GameTest.dir/App/SimpleSound.cpp.obj	7d18e92afa4bf518
+4012	4386	7233207134921539	CMakeFiles/GameTest.dir/stdafx.cpp.obj	923301c20fb96ccd
+1571	4499	7233207137105567	CMakeFiles/GameTest.dir/GameTest.cpp.obj	b71e9b4bb5b70d5e
+2809	5583	7233207147963186	CMakeFiles/GameTest.dir/App/SimpleSprite.cpp.obj	8b0fecdff85f3c84

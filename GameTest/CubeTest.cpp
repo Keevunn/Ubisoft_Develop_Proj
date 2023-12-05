@@ -234,10 +234,10 @@ void move(int st, float v, Cube* cube)
 
 void Update(float deltaTime)
 {
-	if (App::IsKeyPressed('W')) { move(2, -1.f, C); }
-	if (App::IsKeyPressed('A')) { move(1, 1.f, C); }
-	if (App::IsKeyPressed('S')) { move(2, 1.f, C); }
-	if (App::IsKeyPressed('D')) { move(1, -1.f, C); }
+	if (App::IsKeyPressed('W')) { move(2, 1.f, C); }
+	if (App::IsKeyPressed('A')) { move(1, -1.f, C); }
+	if (App::IsKeyPressed('S')) { move(2, -1.f, C); }
+	if (App::IsKeyPressed('D')) { move(1, 1.f, C); }
 	if (App::IsKeyPressed('E')) { depth(-1.f, C); }
 	if (App::IsKeyPressed('Q')) { depth(1.f, C); }
 }

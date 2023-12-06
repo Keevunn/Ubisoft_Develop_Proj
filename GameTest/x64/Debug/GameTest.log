@@ -1,26 +1,4 @@
-﻿  stdafx.cpp
-  app.cpp
-  main.cpp
-  SimpleController.cpp
-  SimpleSound.cpp
-  SimpleSprite.cpp
-  Cube.cpp
-  CubeTest.cpp
-D:\Users\kevwe\Documents\UbisoftProj\git\GameTest\Cube.cpp(111,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Cube.cpp')
-  
-D:\Users\kevwe\Documents\UbisoftProj\git\GameTest\Cube.cpp(112,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Cube.cpp')
-  
-D:\Users\kevwe\Documents\UbisoftProj\git\GameTest\Cube.cpp(113,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Cube.cpp')
-  
-D:\Users\kevwe\Documents\UbisoftProj\git\GameTest\Cube.cpp(114,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Cube.cpp')
-  
-  GameTest.cpp
-  stb_image.cpp
-  Generating Code...
+﻿  CubeTest.cpp
   GameTest.vcxproj -> D:\Users\kevwe\Documents\UbisoftProj\git\x64\Debug\GameTest.exe
   D:\Users\kevwe\Documents\UbisoftProj\git\\GameTest\glut\bin\x64\freeglut.dll
   1 File(s) copied

@@ -174,7 +174,7 @@ Cube* C;
 
 void Init()
 {
-	bl_v.x = 100;
+	bl_v.x = 500;
 	bl_v.y = 100;
 	bl_v.z = 1;
 	C = new Cube(bl_v);
@@ -238,6 +238,6 @@ void Update(float deltaTime)
 	if (App::IsKeyPressed('A')) { move(1, -1.f, C); }
 	if (App::IsKeyPressed('S')) { move(2, -1.f, C); }
 	if (App::IsKeyPressed('D')) { move(1, 1.f, C); }
-	if (App::IsKeyPressed('E')) { depth(-1.f, C); }
-	if (App::IsKeyPressed('Q')) { depth(1.f, C); }
+	if (App::IsKeyPressed('E')) { depth(-0.1f, C); }
+	if (App::IsKeyPressed('Q')) { depth(0.1f, C); }
 }

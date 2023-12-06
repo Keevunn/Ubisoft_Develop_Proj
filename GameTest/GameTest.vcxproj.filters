@@ -23,6 +23,7 @@
     </ClCompile>
     <ClCompile Include="CubeTest.cpp" />
     <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="MatrixHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -51,6 +52,7 @@
       <Filter>stb_image</Filter>
     </ClInclude>
     <ClInclude Include="Cube.h" />
+    <ClInclude Include="MatrixHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="NextAPI">

@@ -4,9 +4,10 @@
 #include <math.h> 
 #include "App/app.h"
 #include "Cube.h"
+#include "MatrixHelper.h"
 
 
-Cube::Coords_2d Cube::Convert_3D_2D(Coords_3d v, float fov)
+Coords_2d Cube::Convert_3D_2D(Coords_3d v, float fov)
 {
 	float x = v.x;
 	float y = v.y;
@@ -21,13 +22,13 @@ Cube::Coords_2d Cube::Convert_3D_2D(Coords_3d v, float fov)
 	//float newX = (X + 1) / 2 * APP_VIRTUAL_WIDTH;
 	//float newY = (Y + 1) / 2 * APP_VIRTUAL_HEIGHT;
 	APP_NATIVE_TO_VIRTUAL_COORDS(X, Y);
-	Cube::Coords_2d r;
+	Coords_2d r;
 	r.x = X;
 	r.y = Y;
 	return r;
 }
 
-Cube::Cube(Cube::Coords_3d bl_v, float h, float w, float d)
+Cube::Cube(Coords_3d bl_v, float h, float w, float d)
 {
 	Cube::CubeFace frontFace;
 	Cube::CubeFace backFace;
@@ -36,7 +37,7 @@ Cube::Cube(Cube::Coords_3d bl_v, float h, float w, float d)
 	Cube::CubeFace topFace;
 	Cube::CubeFace bottomFace;
 
-	Cube::Coords_3d v = bl_v;
+	Coords_3d v = bl_v;
 	frontFace.v1 = v;
 	v.y += h;
 	frontFace.v2 = v;
@@ -108,10 +109,10 @@ void Cube::DrawCube(float r, float g, float b)
 	double fov = M_PI_2;
 	for (int i = 0; i < faces; i++)
 	{
-		Cube::Coords_2d xy1 = Convert_3D_2D(shape[i].v1, fov);
-		Cube::Coords_2d xy2 = Convert_3D_2D(shape[i].v2, fov);
-		Cube::Coords_2d xy3 = Convert_3D_2D(shape[i].v3, fov);
-		Cube::Coords_2d xy4 = Convert_3D_2D(shape[i].v4, fov);
+		Coords_2d xy1 = Convert_3D_2D(shape[i].v1, fov);
+		Coords_2d xy2 = Convert_3D_2D(shape[i].v2, fov);
+		Coords_2d xy3 = Convert_3D_2D(shape[i].v3, fov);
+		Coords_2d xy4 = Convert_3D_2D(shape[i].v4, fov);
 		App::DrawLine(xy1.x, xy1.y, xy2.x, xy2.y, r, g, b);
 		App::DrawLine(xy2.x, xy2.y, xy3.x, xy3.y, r, g, b);
 		App::DrawLine(xy3.x, xy3.y, xy4.x, xy4.y, r, g, b);

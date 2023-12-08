@@ -14,16 +14,6 @@
 class Cube
 {
 	public:
-		struct Coords_2d
-		{
-			float x, y;
-		};
-
-		struct Coords_3d
-		{
-			float x, y, z;
-		};
-
 		struct CubeFace
 		{ // Make an array of points for iteration
 			Coords_3d v1, v2, v3, v4;

@@ -22,8 +22,11 @@
       <Filter>stb_image</Filter>
     </ClCompile>
     <ClCompile Include="CubeTest.cpp" />
-    <ClCompile Include="Cube.cpp" />
     <ClCompile Include="MatrixHelper.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Spawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -51,8 +54,11 @@
     <ClInclude Include="stb_image\stb_image.h">
       <Filter>stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="Cube.h" />
     <ClInclude Include="MatrixHelper.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Spawner.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="NextAPI">
